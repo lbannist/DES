@@ -1,4 +1,4 @@
-# 🏡 Architecture 4 — Project 2: Site-Responsive Design
+# 🏡 Architecture — Project: Site-Responsive Design
 ### *Let the Land Lead*
 
 ---
