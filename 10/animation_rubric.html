@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grade 10 Animation — Final Project Rubric</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+
+  :root {
+    --bg: #0f0f13;
+    --surface: #17171f;
+    --surface2: #1e1e2a;
+    --border: #2a2a38;
+    --accent: #e8c547;
+    --accent2: #7b5ea7;
+    --text: #e8e8f0;
+    --text-muted: #7a7a9a;
+    --score1: #c0392b;
+    --score2: #e67e22;
+    --score3: #2980b9;
+    --score4: #27ae60;
+    --score5: #8e44ad;
+    --score-bonus: #e8c547;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 14px; line-height: 1.6; min-height: 100vh; }
+
+  /* HEADER */
+  .header { background: linear-gradient(135deg, #1a1a28 0%, #0f0f18 100%); border-bottom: 2px solid var(--accent); padding: 32px 40px 24px; position: relative; overflow: hidden; }
+  .header::before { content: ''; position: absolute; top: -60px; right: -60px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(232,197,71,0.08) 0%, transparent 70%); pointer-events: none; }
+  .header-tag { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--accent); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 8px; }
+  .header h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(28px, 5vw, 52px); letter-spacing: 0.04em; color: var(--text); line-height: 1; margin-bottom: 20px; }
+  .header h1 span { color: var(--accent); }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 16px; }
+  .meta-field { display: flex; flex-direction: column; gap: 4px; }
+  .meta-field label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); font-family: 'DM Mono', monospace; }
+  .meta-field input, .meta-field select { background: var(--surface2); border: 1px solid var(--border); border-radius: 4px; color: var(--text); padding: 6px 12px; font-family: 'DM Sans', sans-serif; font-size: 13px; min-width: 180px; outline: none; transition: border-color 0.2s; }
+  .meta-field input:focus, .meta-field select:focus { border-color: var(--accent); }
+  .meta-field select option { background: var(--surface2); }
+
+  /* LEGEND */
+  .legend { display: flex; flex-wrap: wrap; gap: 8px; padding: 14px 40px; background: var(--surface); border-bottom: 1px solid var(--border); align-items: center; }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--text-muted); }
+  .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+
+  /* MAIN */
+  .main { padding: 24px 40px 40px; max-width: 1160px; }
+
+  /* CATEGORY CARD */
+  .category { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; margin-bottom: 20px; overflow: hidden; transition: box-shadow 0.2s; }
+  .category:hover { box-shadow: 0 4px 24px rgba(0,0,0,0.3); }
+  .cat-header { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; background: var(--surface2); border-bottom: 1px solid var(--border); }
+  .cat-title-wrap { display: flex; align-items: center; gap: 12px; }
+  .cat-number { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--accent); line-height: 1; min-width: 32px; }
+  .cat-name { font-size: 15px; font-weight: 600; color: var(--text); }
+  .cat-subtitle { font-size: 11px; color: var(--text-muted); font-style: italic; margin-top: 2px; }
+  .cat-score-display { font-family: 'DM Mono', monospace; font-size: 13px; color: var(--text-muted); white-space: nowrap; }
+  .cat-score-display strong { color: var(--accent); font-size: 18px; }
+  .doubled-tag { display: inline-block; font-family: 'DM Mono', monospace; font-size: 10px; background: rgba(232,197,71,0.15); color: var(--accent); border: 1px solid rgba(232,197,71,0.3); border-radius: 4px; padding: 1px 6px; margin-left: 8px; vertical-align: middle; letter-spacing: 0.08em; }
+
+  /* TABLE */
+  .rubric-table { width: 100%; border-collapse: collapse; }
+  .rubric-table th { padding: 8px 10px; font-family: 'DM Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); text-align: left; border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.02); }
+  .rubric-table th.score-th { text-align: center; width: 105px; }
+  .criterion-col { width: 175px; padding: 12px 14px; vertical-align: top; }
+  .criterion-name { font-weight: 600; font-size: 13px; color: var(--text); margin-bottom: 4px; }
+  .criterion-detail { font-size: 11px; color: var(--text-muted); font-style: italic; }
+  td { border-bottom: 1px solid var(--border); }
+  tr:last-child td { border-bottom: none; }
+  .rubric-table tr:nth-child(even) td { background: rgba(255,255,255,0.015); }
+
+  /* SCORE CELLS */
+  .score-cell { padding: 10px 8px; text-align: center; vertical-align: middle; border-left: 1px solid var(--border); cursor: pointer; transition: background 0.15s; position: relative; width: 105px; }
+  .score-cell:hover { background: rgba(255,255,255,0.05); }
+  .score-cell.selected::after { content: '✓'; position: absolute; top: 4px; right: 5px; font-size: 10px; }
+  .score-num { font-family: 'Bebas Neue', sans-serif; font-size: 22px; line-height: 1; margin-bottom: 3px; }
+  .score-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 5px; font-weight: 600; }
+  .score-desc { font-size: 11px; color: var(--text-muted); text-align: left; line-height: 1.4; }
+
+  .s1 .score-num,.s1 .score-label{color:var(--score1)} .s1.selected{background:rgba(192,57,43,.12);box-shadow:inset 0 0 0 2px var(--score1)} .s1.selected::after{color:var(--score1)}
+  .s2 .score-num,.s2 .score-label{color:var(--score2)} .s2.selected{background:rgba(230,126,34,.12);box-shadow:inset 0 0 0 2px var(--score2)} .s2.selected::after{color:var(--score2)}
+  .s3 .score-num,.s3 .score-label{color:var(--score3)} .s3.selected{background:rgba(41,128,185,.12);box-shadow:inset 0 0 0 2px var(--score3)} .s3.selected::after{color:var(--score3)}
+  .s4 .score-num,.s4 .score-label{color:var(--score4)} .s4.selected{background:rgba(39,174,96,.12);box-shadow:inset 0 0 0 2px var(--score4)} .s4.selected::after{color:var(--score4)}
+  .s5 .score-num,.s5 .score-label{color:var(--score5)} .s5.selected{background:rgba(142,68,173,.12);box-shadow:inset 0 0 0 2px var(--score5)} .s5.selected::after{color:var(--score5)}
+  .s-bonus .score-num,.s-bonus .score-label{color:var(--score-bonus)} .s-bonus.selected{background:rgba(232,197,71,.12);box-shadow:inset 0 0 0 2px var(--score-bonus)} .s-bonus.selected::after{color:var(--score-bonus)}
+
+  /* PRINCIPLES PANEL */
+  .principles-panel { padding: 14px 20px; border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.015); }
+  .principles-label { font-family: 'DM Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); margin-bottom: 10px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .principles-label .badge { background: var(--surface2); border: 1px solid var(--border); border-radius: 10px; padding: 2px 8px; font-size: 11px; color: var(--text-muted); }
+  .principles-grid { display: flex; flex-wrap: wrap; gap: 7px; }
+  .principle-tag { display: inline-flex; align-items: center; gap: 5px; padding: 5px 11px; border-radius: 20px; border: 1px solid var(--border); background: var(--surface2); color: var(--text-muted); font-size: 12px; cursor: pointer; transition: all 0.15s; user-select: none; }
+  .principle-tag:hover { border-color: var(--accent); color: var(--text); }
+  .principle-tag.active { border-color: var(--accent); background: rgba(232,197,71,0.12); color: var(--accent); font-weight: 600; }
+  .principle-tag .chk { font-size: 11px; opacity: 0; transition: opacity 0.15s; }
+  .principle-tag.active .chk { opacity: 1; }
+  .principles-status { margin-top: 10px; font-size: 11px; font-family: 'DM Mono', monospace; color: var(--text-muted); }
+  .req-met { color: var(--score4); }
+  .req-unmet { color: var(--score1); }
+
+  /* PROGRESS BAR */
+  .progress-bar { height: 3px; background: var(--border); border-radius: 2px; overflow: hidden; }
+  .progress-fill { height: 100%; background: linear-gradient(90deg, var(--accent2), var(--accent)); border-radius: 2px; transition: width 0.4s ease; width: 0%; }
+
+  /* TOTALS */
+  .totals-panel { background: var(--surface); border: 1px solid var(--accent); border-radius: 10px; padding: 22px 26px; margin-bottom: 24px; position: sticky; bottom: 16px; z-index: 10; box-shadow: 0 8px 40px rgba(0,0,0,0.5); }
+  .totals-header { font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: var(--accent); letter-spacing: 0.1em; margin-bottom: 14px; }
+  .totals-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin-bottom: 14px; }
+  .total-item { background: var(--surface2); border: 1px solid var(--border); border-radius: 6px; padding: 9px 12px; }
+  .total-item-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 3px; font-family: 'DM Mono', monospace; }
+  .total-item-score { font-family: 'Bebas Neue', sans-serif; font-size: 24px; color: var(--text); line-height: 1; }
+  .total-item-score span { font-size: 13px; color: var(--text-muted); font-family: 'DM Sans', sans-serif; font-weight: 300; }
+  .grand-total { display: flex; align-items: center; justify-content: space-between; padding: 12px 18px; background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; }
+  .grand-total-label { font-family: 'Bebas Neue', sans-serif; font-size: 17px; letter-spacing: 0.1em; color: var(--text-muted); }
+  .grand-total-right { display: flex; align-items: center; gap: 18px; }
+  .grand-total-score { font-family: 'Bebas Neue', sans-serif; font-size: 40px; color: var(--accent); line-height: 1; }
+  .grand-total-score span { font-size: 18px; color: var(--text-muted); font-family: 'DM Sans', sans-serif; font-weight: 300; }
+  .grade-badge { padding: 7px 16px; border-radius: 6px; font-family: 'Bebas Neue', sans-serif; font-size: 26px; letter-spacing: 0.1em; background: var(--surface); border: 2px solid var(--border); color: var(--text-muted); transition: all 0.3s; min-width: 66px; text-align: center; }
+  .grade-badge.grade-a { border-color: var(--score4); color: var(--score4); background: rgba(39,174,96,0.1); }
+  .grade-badge.grade-b { border-color: var(--score3); color: var(--score3); background: rgba(41,128,185,0.1); }
+  .grade-badge.grade-c { border-color: var(--score2); color: var(--score2); background: rgba(230,126,34,0.1); }
+  .grade-badge.grade-d { border-color: var(--score1); color: var(--score1); background: rgba(192,57,43,0.1); }
+  .grade-badge.grade-f { border-color: #555; color: #888; }
+
+  /* COMMENTS */
+  .comments-section { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 22px 26px; margin-bottom: 24px; }
+  .comments-title { font-family: 'Bebas Neue', sans-serif; font-size: 18px; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 14px; }
+  .comment-group { margin-bottom: 14px; }
+  .comment-group label { display: block; font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); font-family: 'DM Mono', monospace; margin-bottom: 5px; }
+  .comment-group textarea { width: 100%; background: var(--surface2); border: 1px solid var(--border); border-radius: 6px; color: var(--text); padding: 9px 12px; font-family: 'DM Sans', sans-serif; font-size: 13px; resize: vertical; min-height: 65px; outline: none; transition: border-color 0.2s; }
+  .comment-group textarea:focus { border-color: var(--accent); }
+
+  /* ACTIONS */
+  .actions { display: flex; gap: 12px; margin-bottom: 28px; flex-wrap: wrap; }
+  .btn { padding: 9px 20px; border-radius: 6px; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 600; cursor: pointer; border: none; transition: opacity 0.2s, transform 0.1s; }
+  .btn:hover { opacity: 0.85; transform: translateY(-1px); }
+  .btn-primary { background: var(--accent); color: #000; }
+  .btn-secondary { background: var(--surface2); color: var(--text); border: 1px solid var(--border); }
+
+  @media print { body{background:white;color:black} .totals-panel{position:static;box-shadow:none} .actions{display:none} }
+  @media (max-width:750px) { .header,.main,.legend{padding-left:16px;padding-right:16px} .score-cell{width:70px;padding:7px 4px} .score-desc{display:none} }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-tag">Grade 10 Animation — Final Project Assessment</div>
+  <h1>2D Animation <span>Rubric</span></h1>
+  <div class="meta-row">
+    <div class="meta-field">
+      <label>Student Name</label>
+      <input type="text" id="studentName" placeholder="Enter name...">
+    </div>
+    <div class="meta-field">
+      <label>Project Choice</label>
+      <select id="projectChoice">
+        <option value="">Select a project...</option>
+        <option>1 — Extreme Weather Scene</option>
+        <option>2 — Magic Spell / Energy Attack</option>
+        <option>3 — Animal Companion Scene</option>
+        <option>4 — Short Narrative Loop</option>
+        <option>5 — Ball Sports Trick Shot</option>
+        <option>6 — Physical Comedy / Slapstick</option>
+        <option>7 — Interior Environment Comes Alive</option>
+        <option>8 — Character Transformation</option>
+      </select>
+    </div>
+    <div class="meta-field">
+      <label>Date</label>
+      <input type="date" id="dateField">
+    </div>
+  </div>
+</div>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background:var(--score1)"></div>1 — Beginning</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--score2)"></div>2 — Developing</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--score3)"></div>3 — Proficient</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--score4)"></div>4 — Good</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--score5)"></div>5 — Excellent</div>
+  <div class="legend-item" style="margin-left:auto;font-size:11px;color:var(--text-muted)">Click score cells to select &nbsp;·&nbsp; Click principle tags to mark which were demonstrated</div>
+</div>
+
+<div class="main">
+  <div class="actions">
+    <button class="btn btn-secondary" onclick="resetAll()">↺ Reset All</button>
+    <button class="btn btn-primary" onclick="window.print()">⎙ Print Rubric</button>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       CAT 1 — STORYBOARD & PLANNING  /4
+  ══════════════════════════════════════════════════ -->
+  <div class="category">
+    <div class="cat-header">
+      <div class="cat-title-wrap">
+        <div class="cat-number">1</div>
+        <div>
+          <div class="cat-name">Storyboard &amp; Planning</div>
+          <div class="cat-subtitle">Assessed before animation begins — clarity, completeness, and connection to final work</div>
+        </div>
+      </div>
+      <div class="cat-score-display">Score: <strong id="cat1-display">—</strong> / 4</div>
+    </div>
+    <table class="rubric-table">
+      <thead><tr>
+        <th>Criterion</th>
+        <th class="score-th">1 — Beginning</th>
+        <th class="score-th">2 — Developing</th>
+        <th class="score-th">3 — Proficient</th>
+        <th class="score-th">4 — Excellent</th>
+      </tr></thead>
+      <tbody><tr>
+        <td class="criterion-col">
+          <div class="criterion-name">Clarity &amp; Completeness</div>
+          <div class="criterion-detail">6+ panels; character, setting, motion, sequencing, camera shots, transitions, mood notes per panel</div>
+        </td>
+        <td class="score-cell s1" onclick="sel('cat1','row1',1)" id="cat1-row1-1">
+          <div class="score-num">1</div><div class="score-label">Beginning</div>
+          <div class="score-desc">Storyboard is incomplete; the story and how it's told are hard to follow</div>
+        </td>
+        <td class="score-cell s2" onclick="sel('cat1','row1',2)" id="cat1-row1-2">
+          <div class="score-num">2</div><div class="score-label">Developing</div>
+          <div class="score-desc">Fewer than 6 panels, or panels lack notes on angle, action, or mood</div>
+        </td>
+        <td class="score-cell s3" onclick="sel('cat1','row1',3)" id="cat1-row1-3">
+          <div class="score-num">3</div><div class="score-label">Proficient</div>
+          <div class="score-desc">6 panels present; story and how elements work together to tell it is clear</div>
+        </td>
+        <td class="score-cell s4" onclick="sel('cat1','row1',4)" id="cat1-row1-4">
+          <div class="score-num">4</div><div class="score-label">Excellent</div>
+          <div class="score-desc">In-depth; most people could follow it to produce the animation that follows the author's vision</div>
+        </td>
+      </tr></tbody>
+    </table>
+    <div class="progress-bar"><div class="progress-fill" id="cat1-progress"></div></div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       CAT 2 — PRINCIPLES OF ANIMATION  /5
+       (with 12-principle checklist above score row)
+  ══════════════════════════════════════════════════ -->
+  <div class="category">
+    <div class="cat-header">
+      <div class="cat-title-wrap">
+        <div class="cat-number">2</div>
+        <div>
+          <div class="cat-name">Principles of Animation</div>
+          <div class="cat-subtitle">Mark which principles were demonstrated, then score overall quality of their application</div>
+        </div>
+      </div>
+      <div class="cat-score-display">Score: <strong id="cat2-display">—</strong> / 5</div>
+    </div>
+
+    <div class="principles-panel">
+      <div class="principles-label">
+        Principles demonstrated in this animation
+        <span class="badge" id="pBadge">0 / 12 marked</span>
+        <span style="color:var(--text-muted);font-size:10px;font-style:italic;">— minimum 3 required</span>
+      </div>
+      <div class="principles-grid">
+        <div class="principle-tag" onclick="toggleP(this)"><span class="chk">✓</span>1. Squash &amp; Stretch</div>
+        <div class="principle-tag" onclick="toggleP(this)"><span class="chk">✓</span>2. Anticipation</div>
+        <div class="principle-tag" onclick="toggleP(this)"><span class="chk">✓</span>3. Staging</div>
+        <div class="principle-tag" onclick="toggleP(this)"><span class="chk">✓</span>4. Straight Ahead / Pose to Pose</div>
+        <div class="principle-tag" onclick="toggleP(this)"><span class="chk">✓</span>5. Follow-through &amp; Overlapping Action</div>
+        <div class="principle-tag" onclick="toggleP(this)"><span class="chk">✓</span>6. Slow-in &amp; Slow-out</div>
+        <div class="principle-tag" onclick="toggleP(this)"><span class="chk">✓</span>7. Arcs</div>
+        <div class="principle-tag" onclick="toggleP(this)"><span class="chk">✓</span>8. Secondary Action</div>
+        <div class="principle-tag" onclick="toggleP(this)"><span class="chk">✓</span>9. Timing</div>
+        <div class="principle-tag" onclick="toggleP(this)"><span class="chk">✓</span>10. Exaggeration</div>
+        <div class="principle-tag" onclick="toggleP(this)"><span class="chk">✓</span>11. Solid Drawing</div>
+        <div class="principle-tag" onclick="toggleP(this)"><span class="chk">✓</span>12. Appeal</div>
+      </div>
+      <div class="principles-status"><span id="pCount" style="color:var(--accent);font-weight:600;">0</span> principles marked — <span id="pReq" class="req-unmet">3 more needed to meet minimum</span></div>
+    </div>
+
+    <table class="rubric-table">
+      <thead><tr>
+        <th>Overall Quality of Application</th>
+        <th class="score-th">1 — Beginning</th>
+        <th class="score-th">2 — Developing</th>
+        <th class="score-th">3 — Proficient</th>
+        <th class="score-th">4 — Good</th>
+        <th class="score-th">5 — Excellent</th>
+      </tr></thead>
+      <tbody><tr>
+        <td class="criterion-col">
+          <div class="criterion-name">Effective Use of Principles</div>
+          <div class="criterion-detail">How well are the demonstrated principles applied to strengthen the animation and storytelling?</div>
+        </td>
+        <td class="score-cell s1" onclick="sel('cat2','row1',1)" id="cat2-row1-1">
+          <div class="score-num">1</div><div class="score-label">Beginning</div>
+          <div class="score-desc">Principles are absent or accidental; movement feels mechanical or randomly timed</div>
+        </td>
+        <td class="score-cell s2" onclick="sel('cat2','row1',2)" id="cat2-row1-2">
+          <div class="score-num">2</div><div class="score-label">Developing</div>
+          <div class="score-desc">Some use of basic principles; awareness shown but execution is uneven</div>
+        </td>
+        <td class="score-cell s3" onclick="sel('cat2','row1',3)" id="cat2-row1-3">
+          <div class="score-num">3</div><div class="score-label">Proficient</div>
+          <div class="score-desc">Use of animation principles is obvious; 3 principles consistently applied</div>
+        </td>
+        <td class="score-cell s4" onclick="sel('cat2','row1',4)" id="cat2-row1-4">
+          <div class="score-num">4</div><div class="score-label">Good</div>
+          <div class="score-desc">3+ principles clearly and consistently demonstrated; contribute meaningfully to the animation</div>
+        </td>
+        <td class="score-cell s5" onclick="sel('cat2','row1',5)" id="cat2-row1-5">
+          <div class="score-num">5</div><div class="score-label">Excellent</div>
+          <div class="score-desc">4+ principles clearly and intentionally used; animation principles add significantly to the story</div>
+        </td>
+      </tr></tbody>
+    </table>
+    <div class="progress-bar"><div class="progress-fill" id="cat2-progress"></div></div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       CAT 3 — STORY & EMOTION  /5
+  ══════════════════════════════════════════════════ -->
+  <div class="category">
+    <div class="cat-header">
+      <div class="cat-title-wrap">
+        <div class="cat-number">3</div>
+        <div>
+          <div class="cat-name">Story &amp; Emotion</div>
+          <div class="cat-subtitle">Does the animation make the audience feel something and want to see more?</div>
+        </div>
+      </div>
+      <div class="cat-score-display">Score: <strong id="cat3-display">—</strong> / 5</div>
+    </div>
+    <table class="rubric-table">
+      <thead><tr>
+        <th>Criterion</th>
+        <th class="score-th">1 — Beginning</th>
+        <th class="score-th">2 — Developing</th>
+        <th class="score-th">3 — Proficient</th>
+        <th class="score-th">4 — Good</th>
+        <th class="score-th">5 — Excellent</th>
+      </tr></thead>
+      <tbody><tr>
+        <td class="criterion-col">
+          <div class="criterion-name">Structure &amp; Engagement</div>
+          <div class="criterion-detail">Emotional arc from beginning to climax to resolution; audience is drawn in and left wanting more</div>
+        </td>
+        <td class="score-cell s1" onclick="sel('cat3','row1',1)" id="cat3-row1-1">
+          <div class="score-num">1</div><div class="score-label">Beginning</div>
+          <div class="score-desc">Little structure or emotional appeal; shows movement but no story or feeling</div>
+        </td>
+        <td class="score-cell s2" onclick="sel('cat3','row1',2)" id="cat3-row1-2">
+          <div class="score-num">2</div><div class="score-label">Developing</div>
+          <div class="score-desc">Interesting moments but arc is incomplete; audience needs context to understand</div>
+        </td>
+        <td class="score-cell s3" onclick="sel('cat3','row1',3)" id="cat3-row1-3">
+          <div class="score-num">3</div><div class="score-label">Proficient</div>
+          <div class="score-desc">Story builds and holds interest; emotion and situation are mostly clear</div>
+        </td>
+        <td class="score-cell s4" onclick="sel('cat3','row1',4)" id="cat3-row1-4">
+          <div class="score-num">4</div><div class="score-label">Good</div>
+          <div class="score-desc">Clear emotional arc; audience understands and feels the emotion; strong opening and ending</div>
+        </td>
+        <td class="score-cell s5" onclick="sel('cat3','row1',5)" id="cat3-row1-5">
+          <div class="score-num">5</div><div class="score-label">Excellent</div>
+          <div class="score-desc">We take an emotional journey from beginning to climax to resolution; powerful and leaves audience wanting more</div>
+        </td>
+      </tr></tbody>
+    </table>
+    <div class="progress-bar"><div class="progress-fill" id="cat3-progress"></div></div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       CAT 4 — TECHNICAL EXECUTION  2 rows × /4 = /8
+  ══════════════════════════════════════════════════ -->
+  <div class="category">
+    <div class="cat-header">
+      <div class="cat-title-wrap">
+        <div class="cat-number">4</div>
+        <div>
+          <div class="cat-name">Technical Execution</div>
+          <div class="cat-subtitle">Two rows scored independently — camera use /4 + character movement /4 = /8 total</div>
+        </div>
+      </div>
+      <div class="cat-score-display">Score: <strong id="cat4-display">—</strong> / 8</div>
+    </div>
+    <table class="rubric-table">
+      <thead><tr>
+        <th>Criterion</th>
+        <th class="score-th">1 — Beginning</th>
+        <th class="score-th">2 — Developing</th>
+        <th class="score-th">3 — Proficient</th>
+        <th class="score-th">4 — Excellent</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td class="criterion-col">
+            <div class="criterion-name">Camera Use</div>
+            <div class="criterion-detail">Intentional use of shots, angles, and movements to serve the story — scored /4</div>
+          </td>
+          <td class="score-cell s1" onclick="sel('cat4','row1',1)" id="cat4-row1-1">
+            <div class="score-num">1</div><div class="score-label">Beginning</div>
+            <div class="score-desc">Camera shots, angles, or movements are absent or unintentional</div>
+          </td>
+          <td class="score-cell s2" onclick="sel('cat4','row1',2)" id="cat4-row1-2">
+            <div class="score-num">2</div><div class="score-label">Developing</div>
+            <div class="score-desc">Shots are obviously planned and work, but don't fully serve the story</div>
+          </td>
+          <td class="score-cell s3" onclick="sel('cat4','row1',3)" id="cat4-row1-3">
+            <div class="score-num">3</div><div class="score-label">Proficient</div>
+            <div class="score-desc">Shots, angles, or movements add impact to various parts of the animation</div>
+          </td>
+          <td class="score-cell s4" onclick="sel('cat4','row1',4)" id="cat4-row1-4">
+            <div class="score-num">4</div><div class="score-label">Excellent</div>
+            <div class="score-desc">Camera is a strong visual storytelling component used purposefully throughout</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="criterion-col">
+            <div class="criterion-name">Character Movement</div>
+            <div class="criterion-detail">Fluidity, weight, and conviction of character or object animation — scored /4</div>
+          </td>
+          <td class="score-cell s1" onclick="sel('cat4','row2',1)" id="cat4-row2-1">
+            <div class="score-num">1</div><div class="score-label">Beginning</div>
+            <div class="score-desc">Movement is stilted or jerky; no sense of weight or natural timing</div>
+          </td>
+          <td class="score-cell s2" onclick="sel('cat4','row2',2)" id="cat4-row2-2">
+            <div class="score-num">2</div><div class="score-label">Developing</div>
+            <div class="score-desc">Basic and workmanlike in most places; inconsistent quality</div>
+          </td>
+          <td class="score-cell s3" onclick="sel('cat4','row2',3)" id="cat4-row2-3">
+            <div class="score-num">3</div><div class="score-label">Proficient</div>
+            <div class="score-desc">Consistently good throughout; weight and timing feel appropriate</div>
+          </td>
+          <td class="score-cell s4" onclick="sel('cat4','row2',4)" id="cat4-row2-4">
+            <div class="score-num">4</div><div class="score-label">Excellent</div>
+            <div class="score-desc">Fluid and convincing; movement feels alive, natural, and emotionally expressive</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="progress-bar"><div class="progress-fill" id="cat4-progress"></div></div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       CAT 5 — CRAFT & POLISH  2 rows × /5 = /10  (DOUBLED)
+  ══════════════════════════════════════════════════ -->
+  <div class="category">
+    <div class="cat-header">
+      <div class="cat-title-wrap">
+        <div class="cat-number">5</div>
+        <div>
+          <div class="cat-name">Craft &amp; Polish <span class="doubled-tag">DOUBLED WEIGHT</span></div>
+          <div class="cat-subtitle">Two rows scored independently — acting &amp; appeal /5 + emotion &amp; empathy /5 = /10 total</div>
+        </div>
+      </div>
+      <div class="cat-score-display">Score: <strong id="cat5-display">—</strong> / 10</div>
+    </div>
+    <table class="rubric-table">
+      <thead><tr>
+        <th>Criterion</th>
+        <th class="score-th">1 — Beginning</th>
+        <th class="score-th">2 — Developing</th>
+        <th class="score-th">3 — Proficient</th>
+        <th class="score-th">4 — Good</th>
+        <th class="score-th">5 — Excellent</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td class="criterion-col">
+            <div class="criterion-name">Acting &amp; Appeal</div>
+            <div class="criterion-detail">Line quality, colour consistency, visual appeal, character design — scored /5</div>
+          </td>
+          <td class="score-cell s1" onclick="sel('cat5','row1',1)" id="cat5-row1-1">
+            <div class="score-num">1</div><div class="score-label">Beginning</div>
+            <div class="score-desc">Character lacks expression or movement; line work significantly inconsistent; colours unintentional</div>
+          </td>
+          <td class="score-cell s2" onclick="sel('cat5','row1',2)" id="cat5-row1-2">
+            <div class="score-num">2</div><div class="score-label">Developing</div>
+            <div class="score-desc">Expression begins to liven characters; noticeable inconsistencies in line quality or colour</div>
+          </td>
+          <td class="score-cell s3" onclick="sel('cat5','row1',3)" id="cat5-row1-3">
+            <div class="score-num">3</div><div class="score-label">Proficient</div>
+            <div class="score-desc">Characters convincing in expression; generally clean with minor lapses in line or colour</div>
+          </td>
+          <td class="score-cell s4" onclick="sel('cat5','row1',4)" id="cat5-row1-4">
+            <div class="score-num">4</div><div class="score-label">Good</div>
+            <div class="score-desc">Strong acting and appeal; colours intentional and support the mood; animation looks polished</div>
+          </td>
+          <td class="score-cell s5" onclick="sel('cat5','row1',5)" id="cat5-row1-5">
+            <div class="score-num">5</div><div class="score-label">Excellent</div>
+            <div class="score-desc">Characters captivating; line work clean and consistent, colours purposeful — looks finished and ready to share</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="criterion-col">
+            <div class="criterion-name">Emotion &amp; Empathy</div>
+            <div class="criterion-detail">Characters' expressions and posing provoke genuine empathy or emotion in the audience — scored /5</div>
+          </td>
+          <td class="score-cell s1" onclick="sel('cat5','row2',1)" id="cat5-row2-1">
+            <div class="score-num">1</div><div class="score-label">Beginning</div>
+            <div class="score-desc">Characters feel flat; no emotional connection is established with the audience</div>
+          </td>
+          <td class="score-cell s2" onclick="sel('cat5','row2',2)" id="cat5-row2-2">
+            <div class="score-num">2</div><div class="score-label">Developing</div>
+            <div class="score-desc">Some emotional moments land but the connection is inconsistent or unclear</div>
+          </td>
+          <td class="score-cell s3" onclick="sel('cat5','row2',3)" id="cat5-row2-3">
+            <div class="score-num">3</div><div class="score-label">Proficient</div>
+            <div class="score-desc">Characters are convincing; the audience understands and identifies with what they feel</div>
+          </td>
+          <td class="score-cell s4" onclick="sel('cat5','row2',4)" id="cat5-row2-4">
+            <div class="score-num">4</div><div class="score-label">Good</div>
+            <div class="score-desc">Strong emotional performance; the audience feels pulled into the character's situation</div>
+          </td>
+          <td class="score-cell s5" onclick="sel('cat5','row2',5)" id="cat5-row2-5">
+            <div class="score-num">5</div><div class="score-label">Excellent</div>
+            <div class="score-desc">Characters are captivating in expression and movement; the audience takes an emotional journey with them</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="progress-bar"><div class="progress-fill" id="cat5-progress"></div></div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       CAT 6 — RENDERING & SUBMISSION  /2
+  ══════════════════════════════════════════════════ -->
+  <div class="category">
+    <div class="cat-header">
+      <div class="cat-title-wrap">
+        <div class="cat-number">6</div>
+        <div>
+          <div class="cat-name">Rendering &amp; Submission</div>
+          <div class="cat-subtitle">File rendered and submitted correctly as an .mp4</div>
+        </div>
+      </div>
+      <div class="cat-score-display">Score: <strong id="cat6-display">—</strong> / 2</div>
+    </div>
+    <table class="rubric-table">
+      <thead><tr>
+        <th>Criterion</th>
+        <th class="score-th">0 — Not Submitted</th>
+        <th class="score-th">1 — Incomplete</th>
+        <th class="score-th">2 — Complete</th>
+      </tr></thead>
+      <tbody><tr>
+        <td class="criterion-col">
+          <div class="criterion-name">File Format &amp; Submission</div>
+          <div class="criterion-detail">Exported as .mp4, plays without errors, named appropriately, submitted on time</div>
+        </td>
+        <td class="score-cell s1" onclick="sel('cat6','row1',0)" id="cat6-row1-0">
+          <div class="score-num">0</div><div class="score-label">Not Submitted</div>
+          <div class="score-desc">No file submitted</div>
+        </td>
+        <td class="score-cell s2" onclick="sel('cat6','row1',1)" id="cat6-row1-1">
+          <div class="score-num">1</div><div class="score-label">Incomplete</div>
+          <div class="score-desc">Submitted but not .mp4, has playback errors, or submitted late</div>
+        </td>
+        <td class="score-cell s-bonus" onclick="sel('cat6','row1',2)" id="cat6-row1-2">
+          <div class="score-num">2</div><div class="score-label">Complete</div>
+          <div class="score-desc">Correct .mp4, plays cleanly, named appropriately, submitted on time</div>
+        </td>
+      </tr></tbody>
+    </table>
+    <div class="progress-bar"><div class="progress-fill" id="cat6-progress"></div></div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       TOTALS PANEL
+  ══════════════════════════════════════════════════ -->
+  <div class="totals-panel">
+    <div class="totals-header">📊 Score Summary</div>
+    <div class="totals-grid">
+      <div class="total-item"><div class="total-item-label">Cat 1 — Storyboard</div><div class="total-item-score" id="t1">— <span>/ 4</span></div></div>
+      <div class="total-item"><div class="total-item-label">Cat 2 — Principles</div><div class="total-item-score" id="t2">— <span>/ 5</span></div></div>
+      <div class="total-item"><div class="total-item-label">Cat 3 — Story &amp; Emotion</div><div class="total-item-score" id="t3">— <span>/ 5</span></div></div>
+      <div class="total-item"><div class="total-item-label">Cat 4 — Technical</div><div class="total-item-score" id="t4">— <span>/ 8</span></div></div>
+      <div class="total-item"><div class="total-item-label">Cat 5 — Craft &amp; Polish ×2</div><div class="total-item-score" id="t5">— <span>/ 10</span></div></div>
+      <div class="total-item"><div class="total-item-label">Cat 6 — Submission</div><div class="total-item-score" id="t6">— <span>/ 2</span></div></div>
+    </div>
+    <div class="grand-total">
+      <div class="grand-total-label">Total Score</div>
+      <div class="grand-total-right">
+        <div class="grand-total-score" id="grandTotal">— <span>/ 34</span></div>
+        <div class="grade-badge" id="gradeBadge">—</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GRADE CONVERSION -->
+  <div class="category" style="margin-bottom:20px;">
+    <div class="cat-header">
+      <div class="cat-title-wrap">
+        <div class="cat-number" style="font-size:20px;">%</div>
+        <div><div class="cat-name">Grade Conversion</div><div class="cat-subtitle">Out of 34 points</div></div>
+      </div>
+    </div>
+    <table class="rubric-table">
+      <thead><tr><th>Total Score</th><th>Percentage</th><th>Letter Grade</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr><td style="padding:10px 14px;font-family:'DM Mono',monospace;color:var(--score4)">31–34</td><td style="padding:10px 14px;color:var(--score4)">90–100%</td><td style="padding:10px 14px;font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--score4)">A</td><td style="padding:10px 14px;color:var(--text-muted);font-size:12px;">Exceptional — animation is compelling, polished, and tells a complete story</td></tr>
+        <tr><td style="padding:10px 14px;font-family:'DM Mono',monospace;color:var(--score3)">26–30</td><td style="padding:10px 14px;color:var(--score3)">75–89%</td><td style="padding:10px 14px;font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--score3)">B</td><td style="padding:10px 14px;color:var(--text-muted);font-size:12px;">Strong work — clear intent, good execution, minor areas for growth</td></tr>
+        <tr><td style="padding:10px 14px;font-family:'DM Mono',monospace;color:var(--score2)">19–25</td><td style="padding:10px 14px;color:var(--score2)">55–74%</td><td style="padding:10px 14px;font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--score2)">C</td><td style="padding:10px 14px;color:var(--text-muted);font-size:12px;">Developing — meets basic requirements but lacks consistency or polish</td></tr>
+        <tr><td style="padding:10px 14px;font-family:'DM Mono',monospace;color:var(--score1)">14–18</td><td style="padding:10px 14px;color:var(--score1)">40–54%</td><td style="padding:10px 14px;font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--score1)">D</td><td style="padding:10px 14px;color:var(--text-muted);font-size:12px;">Incomplete — significant gaps in planning, execution, or submission</td></tr>
+        <tr><td style="padding:10px 14px;font-family:'DM Mono',monospace;color:#888">Below 14</td><td style="padding:10px 14px;color:#888">Below 40%</td><td style="padding:10px 14px;font-family:'Bebas Neue',sans-serif;font-size:22px;color:#888">F</td><td style="padding:10px 14px;color:var(--text-muted);font-size:12px;">Not submitted or does not meet minimum requirements</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- COMMENTS -->
+  <div class="comments-section">
+    <div class="comments-title">Teacher Comments</div>
+    <div class="comment-group"><label>Strengths</label><textarea placeholder="What did this student do exceptionally well?"></textarea></div>
+    <div class="comment-group"><label>Areas for Growth</label><textarea placeholder="What specific areas need improvement?"></textarea></div>
+    <div class="comment-group"><label>Next Steps</label><textarea placeholder="Concrete suggestions for the student's next project or skill development..."></textarea></div>
+  </div>
+
+  <div class="actions">
+    <button class="btn btn-secondary" onclick="resetAll()">↺ Reset All</button>
+    <button class="btn btn-primary" onclick="window.print()">⎙ Print Rubric</button>
+  </div>
+</div>
+
+<script>
+// ── State ───────────────────────────────────────────────────────
+const state = {
+  cat1: { row1: null },
+  cat2: { row1: null },
+  cat3: { row1: null },
+  cat4: { row1: null, row2: null },
+  cat5: { row1: null, row2: null },
+  cat6: { row1: null }
+};
+const catMaxes = { cat1: 4, cat2: 5, cat3: 5, cat4: 8, cat5: 10, cat6: 2 };
+const GRAND_MAX = 34;
+
+// ── Select a score cell ─────────────────────────────────────────
+function sel(cat, row, score) {
+  // Deselect all siblings in this row
+  document.querySelectorAll(`[id^="${cat}-${row}-"]`)
+    .forEach(c => c.classList.remove('selected'));
+  const cell = document.getElementById(`${cat}-${row}-${score}`);
+  if (cell) cell.classList.add('selected');
+  state[cat][row] = score;
+  updateCat(cat);
+  updateTotals();
+}
+
+// ── Category score = sum of all scored rows ─────────────────────
+function getCatScore(cat) {
+  const vals = Object.values(state[cat]);
+  if (vals.some(v => v === null)) return null;
+  return vals.reduce((a, b) => a + b, 0);
+}
+
+function getPartialScore(cat) {
+  return Object.values(state[cat])
+    .filter(v => v !== null)
+    .reduce((a, b) => a + b, 0);
+}
+
+function updateCat(cat) {
+  const score   = getCatScore(cat);
+  const max     = catMaxes[cat];
+  const partial = getPartialScore(cat);
+  const disp    = document.getElementById(`${cat}-display`);
+  const prog    = document.getElementById(`${cat}-progress`);
+
+  if (score !== null) {
+    disp.textContent  = score;
+    prog.style.width  = `${(score / max) * 100}%`;
+  } else if (partial > 0) {
+    disp.textContent  = partial + '…';
+    prog.style.width  = `${(partial / max) * 100}%`;
+  } else {
+    disp.textContent  = '—';
+    prog.style.width  = '0%';
+  }
+}
+
+function updateTotals() {
+  const cats   = ['cat1','cat2','cat3','cat4','cat5','cat6'];
+  const maxArr = [4, 5, 5, 8, 10, 2];
+  let running  = 0;
+  let allDone  = true;
+
+  cats.forEach((cat, i) => {
+    const score   = getCatScore(cat);
+    const partial = getPartialScore(cat);
+    const el      = document.getElementById(`t${i + 1}`);
+    if (score !== null) {
+      el.innerHTML = `${score} <span>/ ${maxArr[i]}</span>`;
+      running += score;
+    } else {
+      running += partial;
+      el.innerHTML = partial > 0
+        ? `${partial}… <span>/ ${maxArr[i]}</span>`
+        : `— <span>/ ${maxArr[i]}</span>`;
+      allDone = false;
+    }
+  });
+
+  document.getElementById('grandTotal').innerHTML = `${running} <span>/ ${GRAND_MAX}</span>`;
+
+  const badge = document.getElementById('gradeBadge');
+  if (allDone) {
+    let g, c;
+    if      (running >= 31) { g = 'A'; c = 'grade-a'; }
+    else if (running >= 26) { g = 'B'; c = 'grade-b'; }
+    else if (running >= 19) { g = 'C'; c = 'grade-c'; }
+    else if (running >= 14) { g = 'D'; c = 'grade-d'; }
+    else                    { g = 'F'; c = 'grade-f'; }
+    badge.textContent = g;
+    badge.className   = `grade-badge ${c}`;
+  } else {
+    badge.textContent = '—';
+    badge.className   = 'grade-badge';
+  }
+}
+
+// ── Principle tags ──────────────────────────────────────────────
+function toggleP(tag) {
+  tag.classList.toggle('active');
+  const n = document.querySelectorAll('.principle-tag.active').length;
+  document.getElementById('pCount').textContent = n;
+  document.getElementById('pBadge').textContent = `${n} / 12 marked`;
+  const req = document.getElementById('pReq');
+  if (n >= 3) {
+    req.textContent = 'minimum 3 requirement met ✓';
+    req.className   = 'req-met';
+  } else {
+    req.textContent = `${3 - n} more needed to meet minimum`;
+    req.className   = 'req-unmet';
+  }
+}
+
+// ── Reset ───────────────────────────────────────────────────────
+function resetAll() {
+  Object.keys(state).forEach(cat =>
+    Object.keys(state[cat]).forEach(r => { state[cat][r] = null; })
+  );
+  document.querySelectorAll('.score-cell.selected').forEach(c => c.classList.remove('selected'));
+  document.querySelectorAll('.principle-tag.active').forEach(t => t.classList.remove('active'));
+
+  // Reset principle counter
+  document.getElementById('pCount').textContent = '0';
+  document.getElementById('pBadge').textContent = '0 / 12 marked';
+  const req = document.getElementById('pReq');
+  req.textContent = '3 more needed to meet minimum';
+  req.className   = 'req-unmet';
+
+  // Reset cat displays
+  Object.keys(catMaxes).forEach(cat => {
+    document.getElementById(`${cat}-display`).textContent = '—';
+    document.getElementById(`${cat}-progress`).style.width = '0%';
+  });
+  [4,5,5,8,10,2].forEach((m,i) => {
+    document.getElementById(`t${i+1}`).innerHTML = `— <span>/ ${m}</span>`;
+  });
+  document.getElementById('grandTotal').innerHTML = `— <span>/ ${GRAND_MAX}</span>`;
+  const badge = document.getElementById('gradeBadge');
+  badge.textContent = '—';
+  badge.className   = 'grade-badge';
+}
+
+// ── Init ────────────────────────────────────────────────────────
+document.getElementById('dateField').valueAsDate = new Date();
+</script>
+</body>
+</html>
