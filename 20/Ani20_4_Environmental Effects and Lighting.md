@@ -1,4 +1,4 @@
-# DES 2013 – Environmental Effects and Lighting
+# Animation 20 – Environmental Effects and Lighting
 
 ## Animation Production Techniques: Building Atmosphere
 
