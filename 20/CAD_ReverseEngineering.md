@@ -298,6 +298,8 @@ Once both the male and female threaded components are modelled, do not assume th
 
 > **Why section analysis matters:** A 3D shaded view can look convincing even when two parts would physically collide or fail to engage. Section analysis removes the outer surfaces and shows the geometry underneath — it is the closest thing to sawing the real part in half to check your work. Always run it before calling a threaded pair complete.
 
+Reference - https://www.youtube.com/watch?v=EjJ2NmCq_aA
+
 ---
 
 #### Quick Check — Before Moving On
