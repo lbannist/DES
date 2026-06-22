@@ -42,6 +42,9 @@ A good cinematic shot:
 * Uses composition effectively
 * Supports the story
 
+
+Reference - https://www.schoolofmotion.com/blog/what-is-a-cinematic-shot-a-lesson-for-motion-designers
+
 ---
 
 # Understanding the Difference
