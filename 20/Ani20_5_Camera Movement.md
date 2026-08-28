@@ -19,11 +19,12 @@ This assignment picks up where that one left off: instead of a static, single-vi
 
 By the end of this assignment students will:
 
-- Create purposeful camera movement
-- Improve visual storytelling
-- Use framing and composition effectively
-- Create dynamic scenes without complex character animation
-- Understand how camera movement affects audience attention
+- Name and recognize five camera moves — pan, zoom, tracking shot, push-in, and reveal — and know what each one is typically used for
+- Choose the right camera move for a given storytelling goal (e.g. a push-in for tension, a reveal for a surprise, a pan to establish a wide space)
+- Build a camera move in Krita using keyframed transforms
+- Understand how camera movement directs audience attention, independent of what's happening in the scene itself
+
+**How this is different from Parallax and Tweening:** all three assignments use the same underlying Krita tool — keyframing the Transform (position/scale) of a layer. What's different is what's moving and why. Here, a single flat scene moves under a fixed frame, and the point is learning the *vocabulary* of camera moves and matching each one to what it communicates. Parallax (the next assignment) adds multiple depth layers moving at different speeds. Tweening (later in the unit) applies the same transform-keyframe skill to individual objects for production efficiency, not to the camera.
 
 ---
 
@@ -35,9 +36,13 @@ Professional productions often create movement through the camera rather than th
 
 A well-designed camera move can create excitement while dramatically reducing production time.
 
+Click here to see the camera movement concepts in greater detail [Basic Camera Movements for Video (Adorama)](https://www.adorama.com/alc/basic-camera-movements-for-video) — a solid overview of pan, tilt, dolly, truck, zoom, and more, with the *why* behind each move, not just the how.
+
 ---
 
 ## Checkpoint 1 — Camera Analysis (Day 1)
+
+**📖 Read the [Adorama Basic Camera Movements](https://www.adorama.com/alc/basic-camera-movements-for-video) reference first**, so you know the vocabulary before you start looking for examples.
 
 **📖 Find one clip for each of the following camera moves** (film, TV, or animation — a couple minutes of searching per type is enough). Use a site like YouTube and search terms like "panning shot example":
 
@@ -53,6 +58,7 @@ A well-designed camera move can create excitement while dramatically reducing pr
 2. What information is revealed?
 3. How does movement affect mood?
 4. When does the camera speed up or slow down?
+5. For each of your five clips, which storytelling goal does the move serve — establishing a space, following a subject, building tension, or delivering a surprise?
 
 ---
 
