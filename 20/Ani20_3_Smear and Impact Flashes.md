@@ -1,4 +1,4 @@
-# DES 2012 – Smear Frames and Impact Flashes
+# Animation 20 – Smear Frames and Impact Flashes
 
 ## Animation Production Techniques: Creating Speed and Power
 
