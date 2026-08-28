@@ -3,28 +3,27 @@
 ## Animation Production Techniques: Reusable Animation Assets
 
 **Time:** 1 Week (4–5 Class Periods)
-
 **Due Date:** Following Monday before class
 
 ---
 
-# Learning Objectives
+## 🎯 Learning Objectives
 
 By the end of this assignment students will:
 
-* Create a seamless looping walk cycle
-* Demonstrate consistent character construction
-* Reuse animation assets efficiently
-* Build a simple animated scene around a reusable cycle
-* Develop production habits that reduce unnecessary drawing
+- Create a seamless looping walk cycle
+- Demonstrate consistent character construction
+- Reuse animation assets efficiently
+- Build a simple animated scene around a reusable cycle
+- Develop production habits that reduce unnecessary drawing
 
 Students will learn that professional animation relies heavily on reusable assets and cycles rather than creating every frame from scratch.
 
 ---
 
-# Production Question
+## 💭 Production Question
 
-## How can an animator create more animation while drawing less?
+### How can an animator create more animation while drawing less?
 
 This assignment introduces one of the most important production techniques used in animation, games, and motion graphics:
 
@@ -34,23 +33,22 @@ Rather than creating hundreds of unique drawings, students will create a high-qu
 
 ---
 
-# Part 1 – Research and Analysis (Day 1)
+## Checkpoint 1 — Research and Analysis (Day 1)
 
-## Walk Cycle Observation
+**📖 Walk Cycle Observation**
 
-Study several examples of walk cycles.
+Study several examples of walk cycles. While observing, answer the following questions:
 
-While observing, answer the following questions:
-
-### Motion Analysis
+**Motion Analysis**
 
 1. How many major poses make up the cycle?
 2. Which frames communicate weight most effectively?
 3. Which body parts move the most?
 4. Which body parts move the least?
 5. What makes the motion feel natural?
+6. Which of the **12 principles of animation** are most visible in this walk cycle — where do you see arcs? Timing? Secondary action?
 
-### Production Analysis
+**Production Analysis**
 
 1. How many drawings do you think were actually created?
 2. Which drawings appear to be reused?
@@ -58,222 +56,191 @@ While observing, answer the following questions:
 
 ---
 
-# Part 2 – Character Preparation (Day 1)
+## Checkpoint 2 — Character Preparation (Day 1)
 
-## Design a Simple Character
+**✏️ Design a Simple Character**
 
 Students may:
 
-* Use a previous Grade 10 character
-* Simplify an existing design
-* Create a new character specifically for this assignment
+- Use a previous Grade 10 character
+- Simplify an existing design
+- Create a new character specifically for this assignment
 
-### Character Requirements
+**Character Requirements**
 
 The character must include:
 
-* Head
-* Torso
-* Arms
-* Legs
+- Head
+- Torso
+- Arms
+- Legs
 
 Avoid:
 
-* Complex clothing
-* Detailed textures
-* Intricate accessories
+- Complex clothing
+- Detailed textures
+- Intricate accessories
 
-### Production Rule
+**Production Rule**
 
-If a detail must be redrawn every frame, consider removing it.
-
-Professional animators simplify designs whenever possible.
+If a detail must be redrawn every frame, consider removing it. Professional animators simplify designs whenever possible.
 
 ---
 
-# Part 3 – Building the Walk Cycle (Days 2–3)
+## Checkpoint 3 — Building the Walk Cycle (Days 2–3)
 
-## Krita Setup
+**Krita Setup**
 
-### Document Settings
+Document Settings:
 
-* 1920 × 1080
-* 12 FPS
+- 1920 × 1080
+- 12 FPS
 
-### Recommended Layers
+Recommended Layers:
 
-* Construction
-* Character
-* Ground Line
-* Reference
+- Construction
+- Character
+- Ground Line
+- Reference
 
----
+**Key Poses**
 
-## Key Poses
+Create the following major poses. Each one is a chance to apply a specific principle from the 12 principles of animation — note the tag next to each pose:
 
-Create the following major poses:
+- **Contact Position** — Front foot contacts ground. *(Timing & Spacing — this is a key pose that anchors the rhythm of the cycle.)*
+- **Down Position** — Weight shifts onto leading leg. *(Squash & Stretch — the body compresses slightly as it absorbs weight.)*
+- **Passing Position** — Rear leg passes through center. *(Arcs — the head and hips should trace a smooth arc through this pose, not a straight line.)*
+- **Up Position** — Body reaches highest point. *(Squash & Stretch — the body stretches slightly as it rises.)*
+- **Opposite Contact Position** — Mirror of first pose. *(Timing & Spacing — confirms the cycle's rhythm is consistent on both sides.)*
 
-### Contact Position
-
-Front foot contacts ground.
-
-### Down Position
-
-Weight shifts onto leading leg.
-
-### Passing Position
-
-Rear leg passes through center.
-
-### Up Position
-
-Body reaches highest point.
-
-### Opposite Contact Position
-
-Mirror of first pose.
-
----
-
-## Cycle Requirements
+**✏️ Cycle Requirements**
 
 The walk cycle must:
 
-* Loop seamlessly
-* Maintain consistent proportions
-* Demonstrate clear weight shifts
-* Include arm movement
-* Include body bounce
+- Loop seamlessly
+- Maintain consistent proportions
+- Demonstrate clear weight shifts
+- Include arm movement *(Follow-Through & Overlapping Action — arms should lag slightly behind the torso's motion, not swing in perfect sync with the legs)*
+- Include body bounce *(Squash & Stretch)*
+- Include one piece of **secondary action** — hair, clothing, an accessory, or similar — that lags slightly behind the main body motion *(Secondary Action)*
 
 ---
 
-# Part 4 – Applying the Cycle (Day 4)
+## Checkpoint 4 — Applying the Cycle (Day 4)
 
-## Scene Integration
+**✏️ Scene Integration**
 
 Create a simple scene where the character travels across the screen.
 
-### Scene Options
+Scene Options:
 
-* Forest path
-* City sidewalk
-* School hallway
-* Fantasy landscape
-* Original environment
+- Forest path
+- City sidewalk
+- School hallway
+- Fantasy landscape
+- Original environment
 
-### Requirements
+Requirements:
 
-* Background included
-* Character travels through scene
-* Walk cycle reused multiple times
-* Camera remains stationary
+- Background included
+- Character travels through scene
+- Walk cycle reused multiple times
+- Camera remains stationary
 
 ---
 
-# Part 5 – Production Efficiency Reflection (Day 5)
+## Checkpoint 5 — Production Efficiency Reflection (Day 5)
 
-Create a short written reflection.
+**✏️ Create a short written reflection.**
 
-### Reflection Questions
+Reflection Questions:
 
 1. How many drawings were required for your walk cycle?
 2. How many seconds of animation were produced?
 3. How much time was saved by reusing the cycle?
 4. What part of the assignment took the longest?
 5. What would you simplify next time?
+6. Which of the 12 principles of animation was hardest to get right in a seamless loop, and why?
 
 ---
 
-# Final Submission Requirements
+## 📤 Final Submission Requirements
 
 Students must submit all of the following:
 
-## Animation File
+**Animation File**
 
-**Filename:**
+Filename: `LastName_DES2010_WalkCycle.kra`
 
-`LastName_DES2010_WalkCycle.kra`
+**Exported Video**
 
----
+Filename: `LastName_DES2010_WalkCycle.mp4`
 
-## Exported Video
+Export Requirements:
 
-**Filename:**
+- 6–10 seconds
+- 1920 × 1080
+- 12 FPS
 
-`LastName_DES2010_WalkCycle.mp4`
+**Reflection Document**
 
-### Export Requirements
-
-* 6–10 seconds
-* 1920 × 1080
-* 12 FPS
+Filename: `LastName_DES2010_Reflection.pdf`
 
 ---
 
-## Reflection Document
+## 📊 Assessment Criteria
 
-**Filename:**
+**Technical Animation (40%)**
 
-`LastName_DES2010_Reflection.pdf`
+- Walk cycle loops smoothly
+- Weight shifts are visible
+- Consistent character construction
+- Timing feels natural
+- Visible arcs in the motion path (Passing Position and above)
+- At least one clear instance of squash & stretch
+- Secondary action (hair, clothing, accessory) lags behind the main body motion
 
----
+**Production Efficiency (30%)**
 
-# Assessment Criteria
+- Effective reuse of animation assets
+- Organized workflow
+- Appropriate scene complexity
+- Smart design decisions
 
-## Technical Animation (40%)
+**Visual Presentation (20%)**
 
-* Walk cycle loops smoothly
-* Weight shifts are visible
-* Consistent character construction
-* Timing feels natural
+- Clear silhouettes
+- Readable character design
+- Scene supports animation
+- Professional export quality
 
----
+**Reflection and Documentation (10%)**
 
-## Production Efficiency (30%)
-
-* Effective reuse of animation assets
-* Organized workflow
-* Appropriate scene complexity
-* Smart design decisions
-
----
-
-## Visual Presentation (20%)
-
-* Clear silhouettes
-* Readable character design
-* Scene supports animation
-* Professional export quality
+- Thoughtful analysis
+- Accurate production observations
+- Evidence of planning
+- Understanding of efficiency concepts
 
 ---
 
-## Reflection and Documentation (10%)
-
-* Thoughtful analysis
-* Accurate production observations
-* Evidence of planning
-* Understanding of efficiency concepts
-
----
-
-# Extension Challenge
+## ⭐ Extension Challenge
 
 For students who finish early:
 
-## Add One Additional Loop
+**Add One Additional Loop**
 
 Examples:
 
-* Running cycle
-* Sneaking cycle
-* Happy walk
-* Tired walk
+- Running cycle
+- Sneaking cycle
+- Happy walk
+- Tired walk
 
 The new cycle must reuse the original character design and construction while demonstrating a different personality or emotion.
 
 ---
 
-# Key Lesson
+## 💡 Key Lesson
 
 The goal of this assignment is **not** to create the most drawings.
 
