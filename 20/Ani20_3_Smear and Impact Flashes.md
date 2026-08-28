@@ -41,6 +41,10 @@ These techniques increase energy while reducing workload.
 
 Start with one clearly exaggerated cartoon hit (punch, kick, or explosion — teacher-provided or class-selected). This makes the smear and impact flash unmissable before moving to a subtler reference.
 
+[![Watch the video](https://img.youtube.com/vi/6UaUi5fBmJc/maxresdefault.jpg)](https://youtu.be/6UaUi5fBmJc)
+
+[![Watch the video](https://img.youtube.com/vi/-nOC-UgaLLw/maxresdefault.jpg)](https://youtu.be/-nOC-UgaLLw)
+
 **📖 Find your reference clip**
 
 Choose or find **one specific reference clip** of a punch, kick, sword swing, dash, or explosion to study closely. This same clip will be the basis for your planning sketches in Checkpoint 2, so pick something with a clear, fast action.
