@@ -1,441 +1,337 @@
-# DES 2021 – Cinematic Trailer Project
+# Animation 20 – Cinematic Trailer Project
 
 ## Final Showcase Production
 
 **Time:** 2 Weeks (10 Class Periods)
-
 **Due Date:** End of Week 2
-
 **Minimum Length:** 30 Seconds
-
 **Maximum Length:** 45 Seconds
 
 ---
 
-# Project Overview
+## 🔗 Building on Everything So Far
+
+This is the final project for the unit — it draws on every technique and every planning skill you've built so far:
+
+- Walk Cycle
+- Anticipation and Overshoot
+- Smear Frames
+- Impact Flash
+- Environmental Effects
+- Lighting Effects
+- Camera Movement
+- Parallax
+- Tweening
+
+You'll need **at least six** of these, plus the storytelling instincts from Hook Shot Challenge (creating curiosity) and Cinematic Shot (building a single strong moment) — now applied across multiple shots and scenes instead of just one.
+
+---
+
+## 🎯 Project Overview
 
 This project simulates the creation of a professional movie, television, game, or animated series trailer.
 
 Unlike a traditional story, a trailer is designed to build excitement, create curiosity, and leave the audience wanting more.
 
-The goal is not to explain the entire plot.
-
-The goal is to convince the audience that the story is worth watching.
+The goal is not to explain the entire plot. The goal is to convince the audience that the story is worth watching.
 
 Students will create a cinematic trailer that showcases the animation techniques learned throughout the course while demonstrating strong production planning and efficient workflow management.
 
 ---
 
-# Essential Question
+## 💭 Essential Question
 
-## How do filmmakers make audiences excited about a story without revealing everything?
+### How do filmmakers make audiences excited about a story without revealing everything?
 
 A great trailer:
 
-* Introduces characters
-* Establishes the world
-* Creates questions
-* Builds tension
-* Highlights important moments
-* Ends with anticipation
+- Introduces characters
+- Establishes the world
+- Creates questions
+- Builds tension
+- Highlights important moments
+- Ends with anticipation
 
 The audience should finish your trailer wanting to watch the full movie.
 
 ---
 
-# Project Requirements
+## Project Requirements
 
 Students must create:
 
-* A cinematic trailer or animated intro
-* 30–45 seconds in length
-* Multiple scenes or camera shots
-* A clear genre or theme
-* A strong final moment that leaves the audience wanting more
+- A cinematic trailer or animated intro
+- 30–45 seconds in length
+- Multiple scenes or camera shots
+- A clear genre or theme
+- A strong final moment that leaves the audience wanting more
 
 Possible genres include:
 
-* Adventure
-* Fantasy
-* Science Fiction
-* Action
-* Mystery
-* Horror
-* Comedy
-* Historical Fiction
-* Original Concept
+- Adventure
+- Fantasy
+- Science Fiction
+- Action
+- Mystery
+- Horror
+- Comedy
+- Historical Fiction
+- Original Concept
 
 ---
 
-# Trailer Structure
+## Trailer Structure
 
-Most trailers follow a simple structure.
+Most trailers follow a simple three-act structure.
 
-## Part 1 – Introduction
+**Act 1 — Introduction**
 
 Introduce:
 
-* Main character
-* Setting
-* World
-* Situation
+- Main character
+- Setting
+- World
+- Situation
 
 The audience should quickly understand the basic premise.
 
----
-
-## Part 2 – Escalation
+**Act 2 — Escalation**
 
 Show:
 
-* Conflict
-* Danger
-* Mystery
-* Discovery
-* Action
+- Conflict
+- Danger
+- Mystery
+- Discovery
+- Action
 
 Build excitement and momentum.
 
----
-
-## Part 3 – The Big Finish
+**Act 3 — The Big Finish**
 
 End with:
 
-* A cliffhanger
-* A dramatic reveal
-* An unanswered question
-* A major threat
-* An exciting action moment
+- A cliffhanger
+- A dramatic reveal
+- An unanswered question
+- A major threat
+- An exciting action moment
 
 The audience should immediately want to know what happens next.
 
 ---
 
-# Animation Requirements
+## Animation Requirements
 
 Your trailer must include all of the following:
 
-* Multiple scenes or shots
-* Camera movement
-* Environmental storytelling
-* Asset reuse
-* Scene transitions
+- Multiple scenes or shots
+- Camera movement
+- Environmental storytelling
+- Asset reuse
+- Scene transitions
 
 Your trailer must also include at least **six** of the following techniques:
 
-* Walk Cycle
-* Anticipation and Overshoot
-* Smear Frames
-* Impact Flash
-* Environmental Effects
-* Lighting Effects
-* Camera Movement
-* Parallax
-* Tweening
+- Walk Cycle
+- Anticipation and Overshoot
+- Smear Frames
+- Impact Flash
+- Environmental Effects
+- Lighting Effects
+- Camera Movement
+- Parallax
+- Tweening
 
 Students are encouraged to use all techniques when appropriate.
 
 ---
 
-# Production Rule
+## Production Rule
 
 Professional productions do not create every asset from scratch.
 
 Students are expected to reuse:
 
-* Characters
-* Backgrounds
-* Props
-* Effects
-* Animation cycles
+- Characters
+- Backgrounds
+- Props
+- Effects
+- Animation cycles
 
 The most efficient productions often create the highest quality results.
 
 ---
 
-# CHECKPOINT 1 – Concept Development
+## Checkpoint 1 — Concept Development
 
-## Due: End of Day 1
+**Due: End of Day 1**
 
-Create:
+**✏️ Write a Trailer Pitch** — a short summary describing:
 
-### Trailer Pitch
+- The story
+- Main character
+- Main conflict
+- Genre
 
-Write a short summary describing:
+**✏️ Create a Mood Board** — collect or sketch visual inspiration:
 
-* The story
-* Main character
-* Main conflict
-* Genre
+- Character ideas
+- Environment ideas
+- Color palettes
+- Lighting references
 
-### Mood Board
-
-Collect or sketch visual inspiration.
-
-Examples:
-
-* Character ideas
-* Environment ideas
-* Color palettes
-* Lighting references
+**📤 Submission Requirements:** Trailer Pitch, Mood Board
 
 ---
 
-## Submission Requirements
+## Checkpoint 2 — Storyboard and Shot List
 
-* Trailer Pitch
-* Mood Board
+**Due: End of Day 2**
 
----
+**✏️ Create a storyboard** showing the major moments of your trailer.
 
-# CHECKPOINT 2 – Storyboard and Shot List
-
-## Due: End of Day 2
-
-Create a storyboard showing the major moments of your trailer.
-
-### Requirements
-
-Minimum:
-
-* 8 storyboard panels
-
-Recommended:
-
-* 10–15 storyboard panels
+Minimum: 8 storyboard panels
+Recommended: 10–15 storyboard panels
 
 Each panel should include:
 
-* Camera angle
-* Main action
-* Scene purpose
+- Camera angle
+- Main action
+- Scene purpose
+
+**✏️ Create a Shot List** — a simple production table.
+
+Example:
+
+| Shot | Length | Purpose |
+|---|---|---|
+| Shot 1 | 3 sec | Introduce World |
+| Shot 2 | 4 sec | Introduce Character |
+| Shot 3 | 5 sec | Reveal Conflict |
+
+**Your Shot List** — fill in the table below for your trailer:
+
+| Shot | Length | Purpose |
+|---|---|---|
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+
+**📤 Submission Requirements:** Storyboard, Shot List
 
 ---
 
-## Shot List
+## Checkpoint 3 — Rough Animation Pass
 
-Create a simple production table.
+**Due: End of Day 4**
 
-| Shot   | Length | Purpose             |
-| ------ | ------ | ------------------- |
-| Shot 1 | 3 sec  | Introduce World     |
-| Shot 2 | 4 sec  | Introduce Character |
-| Shot 3 | 5 sec  | Reveal Conflict     |
+**✏️ Create a rough version of the entire trailer.** No color or polish required. Focus on:
 
----
+- Timing
+- Camera movement
+- Scene transitions
+- Story clarity
 
-## Submission Requirements
+**Goals:** Establish pacing, test shot order, confirm trailer structure, ensure the story makes sense.
 
-* Storyboard
-* Shot List
+**📤 Submission Requirements:** Rough Trailer Export, Working Project File
 
 ---
 
-# CHECKPOINT 3 – Rough Animation Pass
+## Checkpoint 4 — Base Color Pass
 
-## Due: End of Day 4
+**Due: End of Day 6**
 
-Create a rough version of the entire trailer.
+**✏️ Apply flat colors** to characters, props, and backgrounds. Focus on:
 
-Focus on:
+- Consistency
+- Readability
+- Visual hierarchy
 
-* Timing
-* Camera movement
-* Scene transitions
-* Story clarity
+**Goals:** Complete all major artwork, finalize visual style, improve scene clarity.
 
-No color or polish required.
-
----
-
-## Goals
-
-* Establish pacing
-* Test shot order
-* Confirm trailer structure
-* Ensure the story makes sense
+**📤 Submission Requirements:** Updated Trailer Export, Working Project File
 
 ---
 
-## Submission Requirements
+## Checkpoint 5 — Lighting and Effects Pass
 
-* Rough Trailer Export
-* Working Project File
+**Due: End of Day 8**
 
----
+**✏️ Add lighting and effects:**
 
-# CHECKPOINT 4 – Base Color Pass
-
-## Due: End of Day 6
-
-Apply flat colors to:
-
-* Characters
-* Props
-* Backgrounds
-
-Focus on:
-
-* Consistency
-* Readability
-* Visual hierarchy
-
----
-
-## Goals
-
-* Complete all major artwork
-* Finalize visual style
-* Improve scene clarity
-
----
-
-## Submission Requirements
-
-* Updated Trailer Export
-* Working Project File
-
----
-
-# CHECKPOINT 5 – Lighting and Effects Pass
-
-## Due: End of Day 8
-
-Add:
-
-* Lighting
-* Shadows
-* Glow effects
-* Atmospheric effects
-* Impact effects
+- Lighting
+- Shadows
+- Glow effects
+- Atmospheric effects
+- Impact effects
 
 Focus on creating excitement and visual appeal.
 
----
+**Goals:** Improve mood, strengthen storytelling, increase visual impact, direct audience attention.
 
-## Goals
-
-* Improve mood
-* Strengthen storytelling
-* Increase visual impact
-* Direct audience attention
+**📤 Submission Requirements:** Updated Trailer Export, Working Project File
 
 ---
 
-## Submission Requirements
+## Checkpoint 6 — Final Polish Pass
 
-* Updated Trailer Export
-* Working Project File
+**Due: End of Day 10**
 
----
+**✏️ Complete final polish:**
 
-# CHECKPOINT 6 – Final Polish Pass
-
-## Due: End of Day 10
-
-Complete:
-
-* Cleanup
-* Timing adjustments
-* Transition improvements
-* Final visual effects
-* Export testing
+- Cleanup
+- Timing adjustments
+- Transition improvements
+- Final visual effects
+- Export testing
 
 Avoid major story changes during this stage.
 
----
+**Goals:** Improve presentation quality, refine existing work, prepare final export.
 
-## Goals
-
-* Improve presentation quality
-* Refine existing work
-* Prepare final export
+**📤 Submission Requirements:** Near-Final Trailer, Final Project File
 
 ---
 
-## Submission Requirements
-
-* Near-Final Trailer
-* Final Project File
-
----
-
-# Final Submission
-
-## Due: End of Day 10
-
-Students must submit:
-
-### Project File
-
-`LastName_DES2021_CinematicTrailer.kra`
-
----
-
-### Final Video
-
-`LastName_DES2021_CinematicTrailer.mp4`
-
-### Export Settings
-
-* 30–45 seconds
-* 1920 × 1080
-* 12 FPS
-
----
-
-### Production Package
-
-Single PDF containing:
-
-* Trailer Pitch
-* Storyboard
-* Shot List
-* Asset Planning
-* Reflection
-
-Filename:
-
-`LastName_DES2021_ProductionPackage.pdf`
-
----
-
-# Asset Planning
+## Asset Planning
 
 Professional animation projects save time and money through asset reuse.
 
 Before production begins, identify reusable and unique assets.
 
-| Reusable Assets       | One-Time Assets       |
-| --------------------- | --------------------- |
-| Main Character        | Final Reveal          |
-| Walk Cycle            | Special Effect        |
-| Buildings             | Climactic Pose        |
-| Props                 | Unique Story Moment   |
-| Environmental Effects | Trailer Ending        |
-| Background Elements   | One-Time Action Scene |
+Example:
 
----
+| Reusable Assets | One-Time Assets |
+|---|---|
+| Main Character | Final Reveal |
+| Walk Cycle | Special Effect |
+| Buildings | Climactic Pose |
+| Props | Unique Story Moment |
+| Environmental Effects | Trailer Ending |
+| Background Elements | One-Time Action Scene |
 
-## Your Asset Plan
+**Your Asset Plan** — fill in the table below for your trailer:
 
 | Reusable Assets (Can Be Used Multiple Times) | One-Time Assets (Only Used Once) |
-| -------------------------------------------- | -------------------------------- |
-|                                              |                                  |
-|                                              |                                  |
-|                                              |                                  |
-|                                              |                                  |
-|                                              |                                  |
-|                                              |                                  |
+|---|---|
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
 
 The more assets you successfully reuse, the more production time you can spend improving quality and polish.
 
 ---
 
-# Reflection
+## 💭 Reflection
 
-Answer the following questions:
+**✏️ Answer:**
 
 1. What was the most exciting moment in your trailer?
 2. What information did you intentionally hide from the audience?
@@ -446,54 +342,78 @@ Answer the following questions:
 
 ---
 
-# Assessment Criteria
+## 📤 Final Submission
 
-## Audience Excitement and Storytelling (25%)
+**Due: End of Day 10**
 
-* Trailer creates excitement
-* Strong pacing
-* Effective use of suspense
-* Clear genre and tone
-* Audience wants to see more
+**Project File**
 
----
+Filename: `LastName_DES2021_CinematicTrailer.kra`
 
-## Animation Quality (25%)
+**Final Video**
 
-* Effective use of animation techniques
-* Strong timing
-* Smooth motion
-* Clear visual communication
+Filename: `LastName_DES2021_CinematicTrailer.mp4`
 
----
+Export Settings:
 
-## Production Workflow (25%)
+- 30–45 seconds
+- 1920 × 1080
+- 12 FPS
 
-* Completion of checkpoints
-* Effective planning
-* Asset reuse
-* Time management
+**Production Package**
 
----
+Single PDF containing:
 
-## Visual Design and Cinematic Direction (15%)
+- Trailer Pitch
+- Storyboard
+- Shot List
+- Asset Planning
+- Reflection
 
-* Composition
-* Camera work
-* Environmental storytelling
-* Lighting and effects
+Filename: `LastName_DES2021_ProductionPackage.pdf`
 
 ---
 
-## Professionalism (10%)
+## 📊 Assessment Criteria
 
-* Meeting deadlines
-* Organized files
-* Following submission requirements
+**Audience Excitement and Storytelling (25%)**
+
+- Trailer creates excitement
+- Strong pacing
+- Effective use of suspense
+- Clear genre and tone
+- Audience wants to see more
+
+**Animation Quality (25%)**
+
+- Effective use of animation techniques
+- Strong timing
+- Smooth motion
+- Clear visual communication
+
+**Production Workflow (25%)**
+
+- Completion of checkpoints
+- Effective planning
+- Asset reuse
+- Time management
+
+**Visual Design and Cinematic Direction (15%)**
+
+- Composition
+- Camera work
+- Environmental storytelling
+- Lighting and effects
+
+**Professionalism (10%)**
+
+- Meeting deadlines
+- Organized files
+- Following submission requirements
 
 ---
 
-# Success Strategy
+## ⭐ Success Strategy
 
 Students who create strong trailers:
 
@@ -506,12 +426,12 @@ Students who create strong trailers:
 
 ---
 
-# Key Lesson
+## 💡 Key Lesson
 
 A trailer is not a summary.
 
 A trailer is a promise.
 
-The goal is not to tell the audience everything.
+The goal is not to tell the audience everything. The goal is to make them excited enough to want the full story.
 
-The goal is to make them excited enough to want the full story.
+---
