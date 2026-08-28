@@ -27,6 +27,19 @@ Parallax is one of the most efficient techniques in animation.
 
 Multiple layers moving at different speeds create the illusion of depth without requiring additional drawings.
 
+Here are two example videos of Parallax, the first is horizontal, and the second is vertical.
+
+[![Watch the video](https://img.youtube.com/vi/2z4OTRFuLP8/maxresdefault.jpg)](https://youtu.be/2z4OTRFuLP8)
+
+[![Watch the video](https://img.youtube.com/vi/EwmgiD6c8Tg/maxresdefault.jpg)](https://youtu.be/EwmgiD6c8Tg)
+
+This video will explain what the Parallax effect is (I know its using Blender, but the video does a great job explaining the concept)
+
+[![Watch the video](https://img.youtube.com/vi/AlKM1ZpyAWc/maxresdefault.jpg)](https://youtu.be/AlKM1ZpyAWc)
+
+Here is a quick way to do it in Krita using Transform Layers
+[![Watch the video](https://img.youtube.com/vi/JnyntOB4Qaw/maxresdefault.jpg)](https://youtu.be/JnyntOB4Qaw)
+
 ---
 
 # Part 1 – Analysis (Day 1)
