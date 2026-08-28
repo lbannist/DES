@@ -3,25 +3,34 @@
 ## Animation Production Techniques: Creating Depth
 
 **Time:** 1 Week (4–5 Class Periods)
-
 **Due Date:** Following Monday before class
 
 ---
 
-# Learning Objectives
+## 🔗 Building on the Last Assignment
 
-By the end of this assignment students will:
+In **Camera Movement**, you moved a camera across a scene to reveal it over time.
 
-* Create convincing depth using layered artwork
-* Build environments designed for movement
-* Organize scenes efficiently
-* Use parallax to create cinematic scale
+Parallax is the technique that makes that movement feel truly three-dimensional: instead of one flat background sliding past the camera, each depth layer — foreground, midground, background — moves at a **different speed**. Closer layers move faster, farther layers move slower. That speed difference is what actually creates the illusion of depth, the same way things look when you watch the world go by from a moving car.
+
+You can reuse a scene from Camera Movement or Environmental Effects and Lighting, or build a new one — but this time, the layers themselves need to move at different rates.
 
 ---
 
-# Production Question
+## 🎯 Learning Objectives
 
-## How can a simple drawing feel like a massive world?
+By the end of this assignment students will:
+
+- Create convincing depth using layered artwork
+- Build environments designed for movement
+- Organize scenes efficiently
+- Use parallax to create cinematic scale
+
+---
+
+## 💭 Production Question
+
+### How can a simple drawing feel like a massive world?
 
 Parallax is one of the most efficient techniques in animation.
 
@@ -42,16 +51,16 @@ Here is a quick way to do it in Krita using Transform Layers
 
 ---
 
-# Part 1 – Analysis (Day 1)
+## Checkpoint 1 — Analysis (Day 1)
 
-Study examples of:
+**📖 Find one example each of parallax in:**
 
-* Side-scrolling games
-* Animated films
-* Motion graphics
-* Landscape shots
+- A side-scrolling game
+- An animated film or show
+- Motion graphics (e.g. a title sequence or explainer video)
+- A landscape shot from a moving vehicle or camera
 
-### Observation Questions
+**✏️ Answer the Observation Questions in a short written response, using your examples as reference (a few sentences per question is enough).** Keep this — you'll build on it in Checkpoint 2.
 
 1. Which layers move fastest?
 2. Which layers move slowest?
@@ -60,38 +69,46 @@ Study examples of:
 
 ---
 
-# Part 2 – Planning (Day 1)
+## Checkpoint 2 — Planning (Day 1)
 
-Choose an environment:
+**✏️ Choose an environment:**
 
-* Forest
-* Mountain range
-* Fantasy kingdom
-* City skyline
-* Space scene
+- Reuse a scene from Camera Movement or Environmental Effects and Lighting
+- Forest
+- Mountain range
+- Fantasy kingdom
+- City skyline
+- Space scene
 
-Plan:
+**Plan**
 
-* Foreground
-* Midground
-* Background
-* Horizon layer
+Sketch your layers, and assign each one a relative speed (e.g. foreground = fastest, horizon = near-stationary):
 
----
-
-# Part 3 – Animation Production (Days 2–4)
-
-### Requirements
-
-* 10–15 second animation
-* Minimum 4 depth layers
-* Continuous movement
-* At least one environmental animation
-* Strong sense of depth
+- Foreground
+- Midground
+- Background
+- Horizon layer
 
 ---
 
-# Part 4 – Reflection (Day 5)
+## Checkpoint 3 — Animation Production (Days 2–4)
+
+**✏️ Build your parallax scene in Krita, using the layer plan from Checkpoint 2 as your guide.** Set each layer moving at its assigned relative speed so the closer layers visibly move faster than the farther ones.
+
+**Requirements**
+
+- 10–15 second animation
+- Minimum 4 depth layers
+- Each layer moves at a different, clearly distinguishable speed
+- Continuous movement
+- At least one environmental animation (e.g. clouds, water, falling leaves)
+- Strong sense of depth
+
+---
+
+## Checkpoint 4 — Reflection (Day 5)
+
+**✏️ Answer:**
 
 1. Which layer created the strongest depth effect?
 2. Which layer required the most work?
@@ -100,53 +117,58 @@ Plan:
 
 ---
 
-# Final Submission Requirements
+## 📤 Final Submission Requirements
 
-## Animation File
+**Animation File**
 
-`LastName_DES2015_Parallax.kra`
+Filename: `LastName_DES2015_Parallax.kra`
 
-## Exported Video
+**Exported Video**
 
-`LastName_DES2015_Parallax.mp4`
+Filename: `LastName_DES2015_Parallax.mp4`
 
-### Export Requirements
+Export Requirements:
 
-* 10–15 seconds
-* 1920 × 1080
-* 12 FPS
+- 10–15 seconds
+- 1920 × 1080
+- 12 FPS
 
-## Reflection
+**Reflection**
 
-`LastName_DES2015_Reflection.pdf`
-
----
-
-# Assessment Criteria
-
-## Technical Animation (40%)
-
-* Effective layer movement
-* Convincing depth
-* Smooth timing
-
-## Environment Design (30%)
-
-* Strong composition
-* Layer separation
-* Scene readability
-
-## Presentation (20%)
-
-* Professional quality
-* Visual appeal
-
-## Reflection (10%)
-
-* Understanding of production efficiency
+Filename: `LastName_DES2015_Reflection.pdf`
 
 ---
 
-# Key Lesson
+## 📊 Assessment Criteria
+
+**Technical Animation (40%)**
+
+- Effective layer movement
+- Convincing depth
+- Smooth timing
+- Layers move at clearly distinguishable relative speeds
+
+**Environment Design (30%)**
+
+- Strong composition
+- Layer separation
+- Scene readability
+
+**Presentation (20%)**
+
+- Professional quality
+- Visual appeal
+
+**Reflection (10%)**
+
+- Understanding of production efficiency
+
+---
+
+## 💡 Key Lesson
 
 Parallax creates the illusion of complexity while keeping production manageable.
+
+---
+
+
