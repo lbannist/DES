@@ -1,4 +1,4 @@
-# DES 2017 – The Hook Shot Challenge
+# Animation 20 – The Hook Shot Challenge
 
 ## Animation Production Techniques: Creating Curiosity Through Efficient Storytelling
 
