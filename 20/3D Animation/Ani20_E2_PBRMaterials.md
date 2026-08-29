@@ -1,4 +1,4 @@
-# 3D Animation 11 – Material Creation & Texturing
+# 3D Animation 11 – PBR Materials
 
 ## Unit 3: Material Creation & Texturing — Challenge E2
 
