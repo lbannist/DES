@@ -5,7 +5,7 @@
 **Time:** 1 Week (3 Class Periods)
 **Due Date:** *[insert due date]*
 
-*Reinforces sculpting/UV skills first introduced in Gr10. Note: swap `ANI2020` in the filenames below for your actual course code.*
+*Reinforces sculpting/UV skills first introduced in Gr10.*
 
 ---
 
