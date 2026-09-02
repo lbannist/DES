@@ -1,4 +1,4 @@
-# 3D Animation 12 – Hard-Surface Modeling Fundamentals
+# 3D Animation 12 – Hard-Surface Modelling Fundamentals
 
 ## Unit 3: Hard-Surface Modeling, Texturing & Look Development — Challenge I1
 
