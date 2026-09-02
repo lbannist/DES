@@ -2,7 +2,6 @@
 
 ## Unit 3: Hard-Surface Modeling, Texturing & Look Development — Challenge I2
 
-**Stream:** All students
 **Time:** 1 Week (3 Class Periods)
 **Due Date:** *[insert due date]*
 
