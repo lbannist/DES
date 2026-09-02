@@ -2,7 +2,7 @@
 
 ## Unit 3: Hard-Surface Modeling, Texturing & Look Development — Challenge I1
 
-**Stream:** Skills Alberta 3D Digital Game Art track
+
 **Time:** 1.5 Weeks (4 Class Periods)
 **Due Date:** *[insert due date]*
 
