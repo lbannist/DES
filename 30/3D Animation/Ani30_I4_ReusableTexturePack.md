@@ -2,7 +2,6 @@
 
 ## Unit 3: Hard-Surface Modeling, Texturing & Look Development — Challenge I4 (Unit Capstone)
 
-**Stream:** Differentiated — Animation stream and Game Art stream, converging on the same portable deliverable
 **Time:** 1.5–2 Weeks (5–6 Class Periods)
 **Due Date:** *[insert due date]*
 
