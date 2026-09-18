@@ -5,8 +5,6 @@
 **Time:** 1 Week (3 Class Periods)
 **Due Date:** *[insert due date]*
 
-*Note: swap `DES2030` in the filenames below for your actual course code.*
-
 ---
 
 ## 🎯 Learning Objectives
@@ -79,19 +77,19 @@ Students must submit all of the following:
 
 **Revit Project File**
 
-Filename: `LastName_DES2030_C2_RoofChallenge.rvt`
+Filename: `LastName_C2_RoofChallenge.rvt`
 
 **3D Exterior Render**
 
-Filename: `LastName_DES2030_C2_Exterior.png`
+Filename: `LastName_C2_Exterior.png`
 
 **Section View (through the roof change)**
 
-Filename: `LastName_DES2030_C2_Section.png`
+Filename: `LastName_C2_Section.png`
 
 **Reflection Document**
 
-Filename: `LastName_DES2030_C2_Reflection.pdf`
+Filename: `LastName_C2_Reflection.pdf`
 
 ---
 
