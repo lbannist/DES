@@ -5,8 +5,6 @@
 **Time:** 1 Week (2–3 Class Periods)
 **Due Date:** *[insert due date]*
 
-*Note: swap `DES2030` in the filenames below for your actual course code.*
-
 ---
 
 ## 🎯 Learning Objectives
@@ -79,19 +77,19 @@ Students must submit all of the following:
 
 **Revit Project File**
 
-Filename: `LastName_DES2030_C3_Materials.rvt`
+Filename: `LastName_C3_Materials.rvt`
 
 **Exterior Render (final combination)**
 
-Filename: `LastName_DES2030_C3_Exterior.png`
+Filename: `LastName_C3_Exterior.png`
 
 **Interior Renders (both spaces)**
 
-Filename: `LastName_DES2030_C3_Interiors.png`
+Filename: `LastName_C3_Interiors.png`
 
 **Reflection Document**
 
-Filename: `LastName_DES2030_C3_Reflection.pdf`
+Filename: `LastName_C3_Reflection.pdf`
 
 ---
 
