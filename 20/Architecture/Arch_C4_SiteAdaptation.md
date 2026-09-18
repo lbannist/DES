@@ -5,8 +5,6 @@
 **Time:** 1 Week (3 Class Periods)
 **Due Date:** *[insert due date]*
 
-*Note: swap `DES2030` in the filenames below for your actual course code.*
-
 ---
 
 ## 🎯 Learning Objectives
@@ -79,19 +77,19 @@ Students must submit all of the following:
 
 **Revit Project File**
 
-Filename: `LastName_DES2030_C4_SiteAdaptation.rvt`
+Filename: `LastName_C4_SiteAdaptation.rvt`
 
 **Site + 3D Exterior Render**
 
-Filename: `LastName_DES2030_C4_SiteView.png`
+Filename: `LastName_C4_SiteView.png`
 
 **Section View (through the foundation)**
 
-Filename: `LastName_DES2030_C4_Section.png`
+Filename: `LastName_C4_Section.png`
 
 **Reflection Document**
 
-Filename: `LastName_DES2030_C4_Reflection.pdf`
+Filename: `LastName_C4_Reflection.pdf`
 
 ---
 
