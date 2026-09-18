@@ -5,8 +5,6 @@
 **Time:** 1 Week (3 Class Periods)
 **Due Date:** *[insert due date]*
 
-*Note: swap `DES2030` in the filenames below for your actual course code.*
-
 ---
 
 ## 🎯 Learning Objectives
@@ -81,19 +79,19 @@ Students must submit all of the following:
 
 **Revit Project File**
 
-Filename: `LastName_DES2030_C1_IslandVilla.rvt`
+Filename: `LastName_C1_IslandVilla.rvt`
 
 **3D Isometric View Export**
 
-Filename: `LastName_DES2030_C1_3DView.png`
+Filename: `LastName_C1_3DView.png`
 
 **Section View Export (through the stair)**
 
-Filename: `LastName_DES2030_C1_Section.png`
+Filename: `LastName_C1_Section.png`
 
 **Reflection Document**
 
-Filename: `LastName_DES2030_C1_Reflection.pdf`
+Filename: `LastName_C1_Reflection.pdf`
 
 ---
 
