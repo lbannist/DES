@@ -1,8 +1,8 @@
-# Architectural Design 12 – Concept & Schematic Design
+# Architectural Design 12 – Concept to Documentation
 
 ## Unit G: Competition Design Challenge (BILD-style) — Challenge G2
 
-**Time:** 1–1.5 Weeks (4 Class Periods)
+**Time:** 1–1.5 Weeks (6–7 Class Periods)
 **Due Date:** *[insert due date]*
 
 ---
@@ -11,76 +11,113 @@
 
 By the end of this assignment students will:
 
-- Translate a program and constraint set (from G1) into multiple massing options
-- Use quick, low-detail modeling (Fusion360 or Revit massing) to compare concepts before committing
-- Evaluate concepts against the competition's scoring priorities, not just personal preference
-- Select and defend one concept to carry into design development
+- Translate a program and constraint set (from G1) into multiple quick massing options
+- Evaluate concepts against the competition's scoring priorities and compliance checklist, not just personal preference
+- Select and defend one concept, then develop it directly into a documented design in Revit
+- Produce the drawings and views required by the competition level they choose to enter
+- Plan their time so the required views are finished first and polish comes second
 
 ---
 
 ## 💭 Production Question
 
-### How do you know a concept is worth developing before you've spent a single hour detailing it?
+### How do you know a concept is worth developing before you've spent a single hour detailing it — and how do you decide what to finish when the clock is running?
 
 ---
 
-## Checkpoint 1 — Massing Exploration (Day 1)
+## Checkpoint 1 — Level Declaration & Massing Options (Day 1)
 
-**✏️ Generate Real Options, Not One Idea in Three Disguises**
+**✏️ Decide What You're Entering, Then Explore Fast**
 
-1. Using your G1 program and constraints, block out at least three genuinely different massing options (different footprints, stacking, or site orientation — not the same box with a different roof).
-2. Model each option as simple massing in Fusion360 or Revit (no interior detail yet) at correct overall dimensions.
-3. For each option, note in one or two sentences how it responds to the program and to the site.
+1. Review your G1 compliance checklist and the levels of competition in the package. **Declare the level you are aiming for** (and note the maximum grade each level allows in your course rubric).
+2. List every drawing and view that level requires, and write a short plan with **one line per day** for Days 3–7.
+3. Identify the one or two features of your vision that are non-negotiable for the jury to see.
+4. Using your G1 program, constraints, and Design Vision, block out **three genuinely different massing options** (different footprints, stacking, or site orientation — not the same box with a different roof). Keep them quick: simple massing in Fusion360 or Revit at correct overall dimensions, placed on the site.
+5. For each option, write one or two sentences on how it responds to the program, the site, and the package's must-haves.
 
 **Requirements**
 
-- At least three distinct massing options modeled
-- Correct overall dimensions/site fit for each
+- A declared target level, required-views list, and one-line-per-day plan
+- At least three distinct massing options modeled at correct dimensions
 - A one- to two-sentence rationale per option
 
 ---
 
-## Checkpoint 2 — Evaluation & Concept Selection (Day 2)
+## Checkpoint 2 — Concept Selection & Rough Plan (Day 2)
 
 **✏️ Score Your Own Options Before the Jury Does**
 
-1. Build a simple comparison (chart or table) scoring each massing option against the priorities identified in your G1 scoring breakdown.
-2. Identify the strengths and weaknesses of each option honestly, including the one you don't end up choosing.
-3. Select one concept to develop and write a short justification connecting the choice back to the program, site, and scoring priorities.
+1. Build a simple comparison (chart or table) scoring each massing option against your G1 scoring priorities and compliance checklist.
+2. Note one honest strength and one honest weakness for each option, including the ones you don't choose.
+3. Select one concept and write a short justification connecting it to the program, site, vision, and scoring priorities.
+4. Sketch a **rough floor plan** (hand or digital) showing zones, circulation, and where the key features sit. Check approximate square footage and the buildable envelope using the area method from G1.
+5. **Teacher check-in:** Show your comparison, selected concept, and rough plan before moving on.
 
 **Requirements**
 
-- A comparison chart/table scoring all options against G1 priorities
-- Honest strengths/weaknesses noted for each option
+- A comparison chart/table scoring all options
 - A written justification for the selected concept
+- A rough floor plan sketch with an approximate square footage check
+- Teacher check-in completed
 
 ---
 
-## Checkpoint 3 — Schematic Development (Days 3–4)
+## Checkpoint 3 — Floor Plans & Furniture (Days 3–4)
 
-**✏️ Take the Winning Concept One Level Deeper**
+**✏️ Turn Your Concept Into Real, Measurable Rooms**
 
-1. Refine the selected massing into a schematic-level model: rough floor levels, primary circulation path, and approximate room zones blocked out.
-2. Check the schematic against the program's square footage targets and the site's buildable envelope.
-3. Produce a schematic-level exterior 3D view and one rough floor plan sketch (hand or digital) showing the intended layout direction.
-4. Save your file using a version-numbered name (e.g., `LastName_G2_Schematic_v01.rvt`).
+1. Build your floor plan for every level in Revit: fully walled, with overall dimensions.
+2. Label every room and show room sizes.
+3. Create an area schedule (or table) and confirm total square footage, using the measurement method from the package.
+4. Check every required room, room count, and relationship against your compliance checklist.
+5. If your target level requires it, place furniture in every room (scale-appropriate and realistic for how the room is used).
+6. Set up your plan views at the required drawing scale.
 
 **Requirements**
 
-- A refined schematic model (levels, circulation, rough zoning)
-- Square footage and envelope check against G1 targets
-- One exterior 3D view and one rough floor plan sketch
+- Fully dimensioned floor plan(s) with labelled rooms and room sizes
+- Area schedule or table confirming total square footage
+- Furniture in every room (if required by target level)
+- Plans set to the required scale
 
 ---
 
-## Checkpoint 4 — Reflection
+## Checkpoint 4 — Elevations, Site Plan & Feature View (Days 5–6)
 
-**✏️ Answer:**
+**✏️ Show the Building, the Land, and Your Best Idea**
 
-1. What made you rule out the massing options you didn't choose?
-2. Did your scoring comparison change your instinct about which concept was "best"? How?
-3. What part of the schematic still feels unresolved heading into design development?
-4. If you had one more day for this stage, what would you use it for?
+1. Generate the elevations your target level requires (the best side, or all four sides), with materials applied and noted. Confirm the required architectural style is visible on every side you show.
+2. Create a site plan showing the house location, the required site feature(s), and any garage, driveway, or landscape elements.
+3. Create the perspective, axonometric, or interior view your target level requires. A clean, simple view is enough here — you'll refine it into a high-quality render in G3.
+4. Check each view against your floor plans for consistency (no floating walls, mismatched openings, or impossible conditions).
+
+**Requirements**
+
+- Required elevations generated, annotated, and showing materials
+- A site plan with required features shown
+- The required perspective, axonometric, or interior view
+- Cross-checked consistency between plans and elevations
+
+---
+
+## Checkpoint 5 — Model Check & Reflection (Day 7)
+
+**✏️ Close the Gaps**
+
+1. Compare your model against your G1 compliance checklist and your required-views list. Fix anything missing first.
+2. Clean up the Revit file: remove unused elements, and make sure views are clearly named and set to the correct scale.
+3. Complete the reflection below.
+
+**Reflection**
+
+1. Did your scoring comparison change your instinct about which concept was "best"? How?
+2. What did you deliberately cut or simplify to meet the deadline, and why?
+
+**Requirements**
+
+- A completed checklist check with any outstanding items noted
+- A clean, organized Revit file
+- Two reflection answers
 
 ---
 
@@ -88,21 +125,13 @@ By the end of this assignment students will:
 
 Students must submit all of the following:
 
-**Massing Options File**
+**Concept Selection Document** (level declaration, daily plan, massing screenshots, comparison chart, justification, and rough plan sketch)
 
-Filename: `LastName_G2_MassingOptions.rvt` (or `.f3d`)
+Filename: `LastName_G2_ConceptSelection.pdf`
 
-**Concept Comparison & Justification**
+**Revit Project File** (entire design in one file)
 
-Filename: `LastName_G2_ConceptComparison.pdf`
-
-**Schematic Model File**
-
-Filename: `LastName_G2_Schematic.rvt`
-
-**Schematic 3D View & Floor Plan Sketch**
-
-Filename: `LastName_G2_SchematicViews.pdf`
+Filename: `LastName_G2_BILDModel.rvt`
 
 **Reflection Document**
 
@@ -112,27 +141,32 @@ Filename: `LastName_G2_Reflection.pdf`
 
 ## 📊 Assessment Criteria
 
-**Massing Exploration (25%)**
+**Level Declaration & Concept Selection (25%)**
 
-- At least three genuinely distinct options
-- Correct dimensions and site fit
+- Target level declared with required views listed and a realistic daily plan
+- At least three genuinely distinct massing options with correct dimensions and site fit
+- Clear, honest comparison against scoring priorities and a well-justified selection
 
-**Evaluation & Selection (25%)**
+**Plans & Furniture (30%)**
 
-- Clear, honest comparison against scoring priorities
-- Well-justified concept selection
+- Fully dimensioned plans with labelled rooms and room sizes
+- Square footage confirmed using the package's method
+- Furniture placed in every room (if required by target level)
+- Required rooms and relationships met
 
-**Schematic Development (30%)**
+**Elevations, Site Plan & Views (35%)**
 
-- Levels, circulation, and zoning clearly established
-- Program and envelope checks completed
+- Required elevations accurate, annotated, and showing materials
+- Site plan includes the required features
+- Perspective/axonometric/interior view meets target level
+- Consistency between plans and elevations
 
-**Reflection (20%)**
+**Reflection (10%)**
 
-- Thoughtful, specific reflection connecting decisions to outcomes
+- Honest, specific answers connecting decisions to outcomes
 
 ---
 
 ## 💡 Key Lesson
 
-The concept you can defend with a chart beats the concept you just liked — competition juries reward decisions that trace back to the program, not decisions that just look good in a render.
+The concept you can defend with a chart beats the concept you just liked — and a scoped, coordinated set beats an ambitious, incomplete one. A deadline tests what you choose to finish.
