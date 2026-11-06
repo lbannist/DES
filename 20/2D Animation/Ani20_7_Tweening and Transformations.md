@@ -28,8 +28,8 @@ Transform animation allows artists to create motion while reusing existing artwo
 
 [![Watch the video](https://img.youtube.com/vi/EJcDSt29FHw/maxresdefault.jpg)](https://youtu.be/EJcDSt29FHw)
 
-After you are comfortable with adding the tween lines in the Transformation, explore how you can curve those lines to make the motion more smooth.  (The link show start at t=231s)
-[![Watch the video](https://img.youtube.com/vi/0ox81sY_cNo/maxresdefault.jpg)](https://youtu.be/0ox81sY_cNo?t=231)
+After you are comfortable with adding the tween lines in the Transformation, explore how you can curve those lines to make the motion more smooth.  (The link show start at t=381s)
+[![Watch the video](https://img.youtube.com/vi/0ox81sY_cNo/maxresdefault.jpg)](https://www.youtube.com/watch?v=0ox81sY_cNo&t=381s)
 
 ---
 
